@@ -1,0 +1,8 @@
+# CODEOWNERS
+#
+# Security-sensitive changes should have explicit owner review.
+
+* @Zk-nd3r
+SECURITY.md @Zk-nd3r
+CODEOWNERS @Zk-nd3r
+.github/ @Zk-nd3r
