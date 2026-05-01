@@ -63,7 +63,7 @@ blake2s_simd = "1.0"
 bls12_381 = "0.8"
 bs58 = "0.5"
 byteorder = "1.5"
-bytes = "1.10"
+bytes = "1.11"
 chrono = { version = "0.4.40", default-features = false }
 clap = "4.5"
 color-eyre = { version = "0.6.3", default-features = false }
