@@ -1,0 +1,10 @@
+--- a/lib/crosslinkFatPointer.js
++++ b/lib/crosslinkFatPointer.js
+@@ -49,5 +49,6 @@
+             throw new Error('fat pointer signature[' + index + '] must be an object');
+         }
+-        parts.push(hexBytes(signature.pub_key, 32, 'fat pointer signature[' + index + '].pub_key'));
++        // RPC PubKeyID hex is reversed display order; consensus wire needs raw bytes.
++        parts.push(hexBytes(signature.pub_key, 32, 'fat pointer signature[' + index + '].pub_key').reverse());
+         parts.push(byteArray(signature.vote_signature, 64, 'fat pointer signature[' + index + '].vote_signature'));
+     });
